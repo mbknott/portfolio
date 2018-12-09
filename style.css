@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700');
+@import url('https://fonts.googleapis.com/css?family=Timmana');
+
+
+body{
+  background-color:black;
+
+}
+
+.site--container{
+    display:grid;
+    grid-template-rows:50px 1fr;
+
+}
+
+.font {
+    font-family:'Armino', sans-serif;
+    font-weight:700;
+    font-style:italic;
+    font-size:10px;
+    color:white;
+}
+
+.nav {
+    display:flex;
+    flex-direction:row;
+    font-weight:bolder;
+    font-style:normal;
+    justify-content:center;
+    width:100%;
+}
+
+div.nav a:hover {
+    animation:lift 1s 1;
+}
+
+div.nav a {
+    color:white;
+    text-decoration:none;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.body--container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.profile{
+  display:grid;
+  justify-items:end;
+  max-width:90%;
+  height:auto;
+}
+
+.portrait{
+    width:450px;
+    height:auto;
+    position:relative;
+}
+
+.portrait--container{
+    margin-left:50px;
+}
+
+.bio{
+    font-size:25pt;
+    text-align:left;
+    padding:50px;
+    width:75%;
+}
+
+.left-caption{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size:15px;
+  font-weight:400;
+  margin:10%;
+}
+
+.caption--block{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.footer{
+    display:flex;
+    justify-content:center;
+    font-size:10pt;
+}
+
+.instagram{
+    width:50px;
+    height:auto
+}
+
+.parallelogram1 {
+    width: 500px;
+    height: 150px;
+    margin-top:-60%;
+    margin-left:50%;
+    background: black;
+}
+
+.parallelogram1 {
+    width: 100px;
+    height: 30px;
+    margin-top:-20%;
+    margin-left:25%;
+    position:absolute;
+    transform: translate(-40%,-30%);
+    background: black;
+    animation-name:drift-down-right,blink;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+}
+
+.parallelogram2 {
+    width: 100px;
+    height: 30px;
+    margin-top:-20%;
+    position:absolute;
+    transform: translate(-40%,-30%);
+    background: black;
+    animation-name:drift-down-right,blink;
+    animation-duration:6s;
+    animation-iteration-count:infinite;
+}
+
+.parallelogram3 {
+    width: 400px;
+    height: 25px;
+    margin-top:-35%;
+    margin-left:-15%;
+    position:absolute;
+    transform: translate(-40%,-30%);
+    background: black;
+    animation-name:slide-right, blink;
+    animation-duration:8s;
+    animation-iteration-count:infinite;
+}
+
+.parallelogram4 {
+    width: 400px;
+    height: 25px;
+    margin-top:-5%;
+    position:absolute;
+    transform: translate(-40%,-30%);
+    background: black;
+    animation-name:slide-right,blink;
+    animation-duration:8s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes rotate{
+    100% {transform:rotate(360deg);}
+}
+@keyframes drift-down-right {
+    0% {transform: translate(0);}
+    50% {transform: translate(100%,50%);}
+    100% {transform: translate(0);}
+}
+
+@keyframes drift-down-left {
+    0% {transform: translate(100%);}
+    50% {transform: translate(0%,50%);}
+    100% {transform: translate(100%);}
+}
+
+@keyframes slide-right {
+    0% {transform: translate(0);}
+    50% {transform: translate(60%);}
+    100% {transform: translate(0);}
+}
+
+
+@keyframes blink{
+    0%{opacity:1;}
+    50%{opacity:0;}
+    100%{opacity:1;}
+}
+
+@keyframes fade{
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes lift {
+   0%{transform: translate(0,0);}
+   50% {transform: translate(0,10%);}
+   100% {transform: translate(0,0);}
+
+}
+

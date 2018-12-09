@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i');
+
+body {
+  max-height:100%;
+  background-color:black;
+}
+
+.site--container{
+
+}
+
+.body--container{
+  display:grid;
+  grid-template-rows:100px 1fr;
+}
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  margin:10px;
+}
+
+.buttons button{
+  color:white;
+  border:none;
+  background-color:black;
+  margin:5px;
+}
+
+.image--container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  max-width:100%;
+  height:auto;
+
+}
+
+#main-image{
+  max-width:40%;
+  height:auto;
+}
+
+.font {
+    font-family:'Source Sans Pro', sans-serif;
+    font-style:italic;
+    font-size:10px;
+    color:white;
+}
+
+.nav {
+    display:flex;
+    flex-direction:row;
+    font-weight:bolder;
+    font-style:normal;
+    justify-content:center;
+    width:100%;
+}
+
+div.nav a:hover{
+    animation:lift 1s 1;
+}
+
+div.nav a {
+  color:white;
+  text-decoration:none;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.bio{
+    font-size:25pt;
+    text-align:left;
+    mix-blend-mode: difference;
+    padding:50px;
+    width:75%;
+}
+
+.footer{
+    margin:20px;
+    display:flex;
+    justify-content:center;
+    font-size:10pt;
+
+}
+
+.instagram{
+    width:50px;
+    height:auto
+}
+
+@keyframes rotate{
+    100% {transform:rotate(360deg);}
+}
+@keyframes drift-down-right {
+    0% {transform: translate(0);}
+    50% {transform: translate(100%,50%);}
+    100% {transform: translate(0);}
+}
+
+@keyframes drift-down-left {
+    0% {transform: translate(100%);}
+    50% {transform: translate(0%,50%);}
+    100% {transform: translate(100%);}
+}
+
+@keyframes slide-right {
+    0% {transform: translate(0);}
+    50% {transform: translate(60%);}
+    100% {transform: translate(0);}
+}
+
+@keyframes blink{
+    0%{opacity:1;}
+    50%{opacity:0;}
+    100%{opacity:1;}
+}
+
+@keyframes fade{
+    0%{opacity:1;}
+    100%{opacity:0;}
+}
+
+@keyframes lift {
+    0%{transform: translate(0,0);}
+    50% {transform: translate(0,10%);}
+    100% {transform: translate(0,0);}
+
+}
+
+@keyframes swipe {
+  0%{transform: translate(0,-200%);}
+  100% {transform: translate(0,0);}
+
+}

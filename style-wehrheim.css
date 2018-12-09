@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i');
+
+.site--container{
+}
+
+body{
+  background-color:black;
+}
+
+.font {
+  font-family:'Armino', sans-serif;
+  font-weight:700;
+  font-style:italic;
+  font-size:10px;
+  color:white;
+}
+
+.nav {
+  font-family:'Source Sans Pro', sans-serif;
+  display:flex;
+  flex-direction:row;
+  font-weight:bolder;
+  font-style:normal;
+  justify-content:center;
+  width:100%;
+}
+
+div.nav a:hover{
+  animation:lift 1s 1;
+}
+
+div.nav a {
+  color:white;
+  text-decoration:none;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.image--waterfall{
+  max-width:100%;
+}
+
+.body--container .image--container{
+  position:absolute;
+  margin-left:500px;
+  margin-top:100px;
+}
+
+#peggy{
+  padding:100px;
+  width:75%;
+}
+
+#butterfly{
+  position:relative;
+  margin: 100px;
+  max-width:800px;
+  height:auto;
+}
+
+#wehrheim-white2{
+  position:static;
+  margin-left:500px;
+  margin-top:-20%;
+  margin-bottom:-20%;
+}
+
+.body--container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.bio {
+  font-size:25pt;
+  text-align:left;
+  mix-blend-mode: difference;
+  padding:100px;
+  width:75%;
+}
+
+.footer {
+  display:flex;
+  justify-content:center;
+  font-size:10pt;
+}
+
+.instagram {
+  width:50px;
+  height:auto;
+}
+
+@keyframes rotate{
+  100% {transform:rotate(360deg);}
+}
+
+@keyframes drift-down-right {
+  0% {transform: translate(0);}
+  50% {transform: translate(100%,50%);}
+  100% {transform: translate(0);}
+}
+
+@keyframes drift-down-left {
+  0% {transform: translate(100%);}
+  50% {transform: translate(0%,50%);}
+  100% {transform: translate(100%);}
+}
+
+@keyframes slide-right {
+  0% {transform: translate(0);}
+  50% {transform: translate(60%);}
+  100% {transform: translate(0);}
+}
+
+@keyframes blink{
+  0%{opacity:1;}
+  50%{opacity:0;}
+  100%{opacity:1;}
+}
+
+@keyframes fade{
+  0%{opacity:1;}
+  100%{opacity:0;}
+}
+
+@keyframes lift {
+  0%{transform: translate(0,0);}
+  50% {transform: translate(0,10%);}
+  100% {transform: translate(0,0);}
+
+}
+
+
